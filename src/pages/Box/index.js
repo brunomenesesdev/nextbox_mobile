@@ -51,10 +51,8 @@ export default function Box(){
                         })
                     }
 
-                    console.log('aqui' + user._id)
                     await api.post(`boxes/${user._id}/files`, data)
 
-                    console.log('passou')
     
                 }catch(error) {
                     console.log(error)
